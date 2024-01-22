@@ -9,6 +9,7 @@ import cover from '../../../public/assets/images/kingdom-hearts/kh-gamepage-cove
 import './page.css'
 import commentIcon from '../../../public/assets/icons/message-icon.svg'
 import CommentsPage from '@/app/components/CommentsPage';
+import SuccessModal from '@/app/components/SuccessModal';
 
 
 const kingdomHeartsPage = () => {
@@ -92,8 +93,14 @@ const kingdomHeartsPage = () => {
                         <Link className='text-right text-sm underline' href='/gamepage/kingdomhearts/comments'>
                             <p>See more...</p>
                         </Link>
-
                     </div>
+        </div>
+        {/* Save Game & View Saved Games */}
+        <div className='flex flex-col my-5 gap-2'>
+            <button className='bg-cyan-500 w-40 h-10 self-center rounded-full focus:bg-cyan-800'>Save Game</button>
+            <button className='bg-cyan-500 w-40 h-10 self-center rounded-full focus:bg-cyan-800'>View Saved Games</button>
+            {/* <SuccessModal /> */}
+            
         </div>
     </div>
   )

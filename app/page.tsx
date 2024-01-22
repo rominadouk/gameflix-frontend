@@ -7,6 +7,7 @@ import genshinImpactCover from '../public/assets/images/genshin-cover.jpeg'
 import honkaiCover from '../public/assets/images/honkai-cover.jpeg'
 import lostArkCover from '../public/assets/images/lost-ark-cover.jpeg'
 import zeldaCover from '../public/assets/images/zelda-cover.jpeg'
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -56,7 +57,10 @@ export default function Home() {
     <div className='pb-5'>
       <div className="text-white pb-6 border-b-2">
         <h1 className='mt-5 ml-6 text-2xl'>Home</h1>
-        <div id='home-image' className=' h-40 w-80 m-auto mt-3 rounded-md border border-white '></div>
+        <Link href='/gamepage/kingdomhearts'>
+          <div id='home-image' className=' h-40 w-80 m-auto mt-3 rounded-md border border-white '></div>
+        </Link>
+
       </div>
       <section id='trending' className='pb-6 border-b-2'>
           <h2 className='mt-2 ml-6 text-2xl text-white'>Trending</h2>
