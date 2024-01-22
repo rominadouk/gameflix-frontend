@@ -15,7 +15,7 @@ const config: Config = {
       },
         colors: {
           'lighter-blue' : '#405D86',
-          'menu-blue': 'rgba(64, 93, 134, .5)',
+          'menu-blue': 'rgba(64, 93, 134)',
           'page-blue': '#213045'
 
       }

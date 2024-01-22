@@ -53,14 +53,14 @@ export default function Home() {
 
 
   return (
-    <>
+    <div className='pb-5'>
       <div className="text-white pb-6 border-b-2">
         <h1 className='mt-5 ml-6 text-2xl'>Home</h1>
         <div id='home-image' className=' h-40 w-80 m-auto mt-3 rounded-md border border-white '></div>
       </div>
       <section id='trending' className='pb-6 border-b-2'>
           <h2 className='mt-2 ml-6 text-2xl text-white'>Trending</h2>
-          <div className='flex gap-4 justify-center mt-3'>
+          <div className='flex gap-4 justify-center mt-3 mx-2'>
           {trending.map((game) => {
             return (
               <div key={game.name} className='h-32 w-20 rounded-md border border-white'
@@ -71,8 +71,8 @@ export default function Home() {
           </div>
         </section>
         <section id='open-world'>
-        <h1 className='mt-5 ml-6 text-2xl text-white'>Open World</h1>
-            <div className='flex gap-4 justify-center mt-3'>
+        <h2 className='mt-2 ml-6 text-2xl text-white'>Open World</h2>
+            <div className='flex gap-4 justify-center mt-3 mx-2'>
             {openWorld.map((game) => {
               return (
                 <div key={game.name} className='h-32 w-20 rounded-md border border-white'
@@ -82,6 +82,6 @@ export default function Home() {
             })}
             </div>
         </section>
-    </>
+    </div>
   )
 }
